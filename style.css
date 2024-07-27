@@ -1,0 +1,255 @@
+
+
+
+body {
+    background-image: url("bgimage.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    height: 100vh;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #1e5aa5 #0a2a52;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #0a2a52;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #1e5aa5, #124076);
+    border-radius: 10px;
+    border: 2px solid #0a2a52;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #327cd6, #1e5aa5);
+}
+
+body::-webkit-scrollbar-thumb:active {
+    background: linear-gradient(180deg, #124076, #0a2a52);
+}
+
+body::-webkit-scrollbar-button {
+    display: none;
+}
+
+body::-webkit-scrollbar-corner {
+    background: #124076;
+}
+
+
+.navbar.bg-body-tertiary {
+    margin-top: 10px;
+    background-color: #7B8FA1 !important;
+    border-radius: 1rem;
+    opacity: 85%;
+}
+
+
+.btn i {
+    margin-right: 5px;
+    font-size: 1.2rem;
+}
+
+
+.display {
+    background-color: #7B8FA1;
+    width: 90%;
+    max-width: 1150px;
+    height: auto;
+    margin: 20px auto;
+    position: relative;
+    display: flex;
+    flex-direction: row; 
+    align-items: stretch; 
+    opacity: 70%;
+    border-radius: 2rem;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: space-between; 
+}
+
+
+.cityImage {
+    flex: 1; 
+    height: auto; 
+    min-height: 120px; 
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    background-color: #124076;
+    opacity: 100%;
+    margin-right: 10px;
+    box-sizing: border-box; 
+}
+.cityName{
+    color: white;
+    background-color: #1e5aa5;
+    width: fit-content;
+    height: fit-content;
+}
+
+
+.constraint {
+    width: 50%; 
+    height: auto; 
+    padding: 10px;
+    background-color: #124076;
+    color: white;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    overflow-y: auto; 
+    text-align: center;
+    font-weight: bold;
+    margin-left: 10px; 
+}
+
+
+.constraint::-webkit-scrollbar {
+    width: 12px;
+}
+
+.constraint::-webkit-scrollbar-track {
+    background: #0a2a52;
+    border-radius: 8px;
+}
+
+.constraint::-webkit-scrollbar-thumb {
+    background: #1e5aa5;
+    border-radius: 8px;
+    border: 3px solid #124076;
+}
+
+.constraint::-webkit-scrollbar-thumb:hover {
+    background: #327cd6;
+}
+
+.constraint {
+    scrollbar-width: thin;
+    scrollbar-color: #1e5aa5 #0a2a52;
+}
+
+.constraint::-webkit-scrollbar-button {
+    display: none;
+}
+
+.constraint::-webkit-scrollbar-corner {
+    background: #124076;
+}
+
+
+#windy {
+    width: 90%;
+    max-width: 1150px;
+    height: 500px;
+    margin: 60px auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 80%;
+    border-radius: 2rem;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    z-index: 100;
+    border: 5px solid red;
+}
+
+
+#windy #bottom,
+#windy #mobile-ovr-select,
+#windy #embed-zoom {
+    display: none !important;
+}
+
+#windy #logo-wrapper {
+    top: initial;
+    bottom: 65px;
+}
+
+#windy #logo-wrapper #logo {
+    left: 80px;
+}
+
+
+@media (max-width: 768px) {
+    .display {
+        flex-direction: column; 
+    }
+
+    .cityImage, .constraint {
+        width: 100%; 
+        margin: 0;
+    }
+
+    .cityImage {
+        height: 150px;
+    }
+
+    #windy {
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cityImage {
+        height: 120px; 
+    }
+
+    #windy {
+        height: 120px;
+    }
+}
+
+.forecast{
+    color: white;
+}
+.forecast-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    margin-bottom: 20px;
+}
+
+
+.forecast-item {
+    flex: 1 1 calc(25% - 10px); 
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #3f2feb;
+    margin: 0 5px; 
+    text-align: center;
+    
+    max-width: calc(25% - 10px); 
+}
+
+
+@media (max-width: 768px) {
+    .forecast-item {
+        flex: 1 1 calc(50% - 10px); 
+        max-width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    .forecast-item {
+        flex: 1 1 calc(100% - 10px); 
+        max-width: calc(100% - 10px);
+    }
+}
+
+
+.forecast {
+    background-color: #0a2a52;
+}
