@@ -226,11 +226,11 @@ body::-webkit-scrollbar-corner {
     flex: 1 1 calc(25% - 10px); 
     box-sizing: border-box;
     padding: 10px;
-    border-radius: 5px;
+      border-radius: 7px;
     background-color: #C2DEDC;
     margin: 0 5px; 
     text-align: center;
-    
+      opacity: 0.7;
     max-width: calc(25% - 10px); 
 }
 
@@ -251,5 +251,5 @@ body::-webkit-scrollbar-corner {
 
 
 .forecast {
-    background-color: #CDC2AE;
+    background-color: #116A7B;
 }
